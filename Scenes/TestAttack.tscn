@@ -1,0 +1,137 @@
+[gd_scene format=3 uid="uid://cajruwbd41pcy"]
+
+[ext_resource type="Texture2D" uid="uid://bu4ek17pux2k8" path="res://TestFiles/KnightIdle.png" id="1_gmuc8"]
+[ext_resource type="MeshLibrary" uid="uid://bk3p4ngjywbey" path="res://TestFiles/tiles.meshlib" id="1_jyygi"]
+[ext_resource type="Texture2D" uid="uid://bmuae2e8tv8hj" path="res://TestFiles/Idle.png" id="2_6m5ak"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h2va5"]
+atlas = ExtResource("1_gmuc8")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xl1ln"]
+atlas = ExtResource("1_gmuc8")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_owwht"]
+atlas = ExtResource("1_gmuc8")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mfp1l"]
+atlas = ExtResource("1_gmuc8")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_47rdr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h2va5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xl1ln")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_owwht")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mfp1l")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a3cm7"]
+atlas = ExtResource("2_6m5ak")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ssuxk"]
+atlas = ExtResource("2_6m5ak")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wstgx"]
+atlas = ExtResource("2_6m5ak")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uqgs3"]
+atlas = ExtResource("2_6m5ak")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_siilh"]
+atlas = ExtResource("2_6m5ak")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1hjbd"]
+atlas = ExtResource("2_6m5ak")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gno3w"]
+atlas = ExtResource("2_6m5ak")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dvwds"]
+atlas = ExtResource("2_6m5ak")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_llags"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a3cm7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ssuxk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wstgx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uqgs3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_siilh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1hjbd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gno3w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dvwds")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[node name="Node3D" type="Node3D" unique_id=1465432829]
+
+[node name="Hero" type="Node3D" parent="." unique_id=239892126]
+transform = Transform3D(-4.371139e-08, 0, 1.0316938, 0, 0.95723146, 0, -1, 0, -4.509677e-08, -0.3144729, 1.709, 2.0574822)
+
+[node name="Hero" type="AnimatedSprite3D" parent="Hero" unique_id=1309370450]
+alpha_cut = 2
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_47rdr")
+animation = &"Idle"
+frame = 3
+frame_progress = 0.03679749
+
+[node name="Enemy" type="Node3D" parent="." unique_id=458766658]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.3144729, 1.709, -0.31974387)
+
+[node name="Enemy" type="AnimatedSprite3D" parent="Enemy" unique_id=206605577]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, -0.049, 0, 0.029)
+alpha_cut = 2
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_llags")
+animation = &"Idle"
+frame = 7
+frame_progress = 0.25175032
+
+[node name="GridMap" type="GridMap" parent="." unique_id=1213516319]
+mesh_library = ExtResource("1_jyygi")
+cell_size = Vector3(1, 0.1, 1)
+data = {
+"cells": PackedInt32Array(1, 1, 1048617, 0, 1, 1048617, 1, 2, 1048617, 0, 2, 1048617, 65535, 2, 1048617, 65535, 1, 1048617, 2, 1, 1048617, 2, 2, 1048617, 3, 2, 1048617, 3, 1, 1048617, 4, 1, 1048617, 4, 2, 1048617, 4, 3, 1048617, 3, 3, 1048617, 2, 3, 1048617, 1, 3, 1048617, 0, 3, 1048617, 65535, 3, 1048617, 65534, 2, 1048617, 65534, 3, 1048617, 65533, 3, 1048617, 65534, 4, 1048617, 65535, 4, 1048617, 0, 4, 1048617, 1, 4, 1048617, 5, 2, 1048617, 6, 1, 1048617, 7, 1, 1048617, 7, 0, 1048617, 7, 65535, 1048617, 6, 0, 1048617, 6, 2, 1048617, 7, 2, 1048617, 7, 3, 1048617, 6, 3, 1048617, 5, 3, 1048617, 5, 4, 1048617, 4, 4, 1048617, 3, 4, 1048617, 2, 4, 1048617, 6, 4, 1048617, 7, 4, 1048617, 5, 1, 1048617, 5, 0, 1048617, 5, 65535, 1048617, 5, 65534, 1048617, 6, 65534, 1048617, 7, 65534, 1048617, 6, 65535, 1048617, 4, 65535, 1048617, 3, 65535, 1048617, 2, 65535, 1048617, 1, 65535, 1048617, 0, 0, 1048617, 65535, 0, 1048617, 65534, 0, 1048617, 65533, 0, 1048617, 65533, 1, 1048617, 65534, 1, 1048617, 2, 0, 1048617, 3, 0, 1048617, 4, 0, 1048617, 1, 0, 1048617, 4, 65534, 1048617, 3, 65534, 1048617, 2, 65534, 1048617, 1, 65534, 1048617, 0, 65534, 1048617, 65535, 65534, 1048617, 65534, 65534, 1048617, 65534, 65535, 1048617, 65535, 65535, 1048617, 0, 65535, 1048617, 65533, 65535, 1048617, 65533, 65534, 1048617, 65532, 0, 1048617, 65532, 1, 1048617, 65533, 2, 1048617, 65533, 4, 1048617, 65532, 4, 1048617, 65532, 3, 1048617, 65532, 2, 1048617, 65532, 65535, 1048617)
+}

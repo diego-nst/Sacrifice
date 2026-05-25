@@ -1,0 +1,558 @@
+[gd_scene format=3 uid="uid://dwpxhmn01ffsb"]
+
+[ext_resource type="PackedScene" uid="uid://c7kdq84e1e821" path="res://TestFiles/Tiles/arrow.glb" id="1_q2ux0"]
+[ext_resource type="PackedScene" uid="uid://dqru5ps28voll" path="res://TestFiles/Tiles/arrows.glb" id="2_waoeo"]
+[ext_resource type="PackedScene" uid="uid://b4qmgm15olg0q" path="res://TestFiles/Tiles/barrel.glb" id="3_a3cm7"]
+[ext_resource type="PackedScene" uid="uid://2u6yvgcuhgxr" path="res://TestFiles/Tiles/block-grass-corner-low.glb" id="4_ssuxk"]
+[ext_resource type="PackedScene" uid="uid://i4sc2b405sas" path="res://TestFiles/Tiles/block-grass-corner-overhang-low.glb" id="5_wstgx"]
+[ext_resource type="PackedScene" uid="uid://v474sl7ho0as" path="res://TestFiles/Tiles/block-grass-corner-overhang.glb" id="6_uqgs3"]
+[ext_resource type="PackedScene" uid="uid://dny1vdd5rvqwl" path="res://TestFiles/Tiles/block-grass-corner.glb" id="7_siilh"]
+[ext_resource type="PackedScene" uid="uid://dywn63od5srk3" path="res://TestFiles/Tiles/block-grass-curve-half.glb" id="8_1hjbd"]
+[ext_resource type="PackedScene" uid="uid://tbp00huk045a" path="res://TestFiles/Tiles/block-grass-curve-low.glb" id="9_gno3w"]
+[ext_resource type="PackedScene" uid="uid://dpb2ft1kt4je2" path="res://TestFiles/Tiles/block-grass-curve.glb" id="10_dvwds"]
+[ext_resource type="PackedScene" uid="uid://dfjwkqrs06ice" path="res://TestFiles/Tiles/block-grass-edge.glb" id="11_a2ik7"]
+[ext_resource type="PackedScene" uid="uid://udjibpa57ov8" path="res://TestFiles/Tiles/block-grass-hexagon.glb" id="12_qmqx2"]
+[ext_resource type="PackedScene" uid="uid://bvposvx7rl82j" path="res://TestFiles/Tiles/block-grass-large-slope-narrow.glb" id="13_2cax5"]
+[ext_resource type="PackedScene" uid="uid://c4vhao4vacmt8" path="res://TestFiles/Tiles/block-grass-large-slope-steep-narrow.glb" id="14_ks55q"]
+[ext_resource type="PackedScene" uid="uid://drd1fxytm50u5" path="res://TestFiles/Tiles/block-grass-large-slope-steep.glb" id="15_xljsu"]
+[ext_resource type="PackedScene" uid="uid://bg2etf870358u" path="res://TestFiles/Tiles/block-grass-large-slope.glb" id="16_4g3xf"]
+[ext_resource type="PackedScene" uid="uid://db4rgcvxh8tsv" path="res://TestFiles/Tiles/block-grass-large-tall.glb" id="17_7gx84"]
+[ext_resource type="PackedScene" uid="uid://e6rfkvnlrwcy" path="res://TestFiles/Tiles/block-grass-large.glb" id="18_0kw80"]
+[ext_resource type="PackedScene" uid="uid://d3llwe8whjnoe" path="res://TestFiles/Tiles/block-grass-long.glb" id="19_1rda0"]
+[ext_resource type="PackedScene" uid="uid://d3qic6sbrmwwi" path="res://TestFiles/Tiles/block-grass-low-hexagon.glb" id="20_b60iw"]
+[ext_resource type="PackedScene" uid="uid://d38h5cgyka3ce" path="res://TestFiles/Tiles/block-grass-low-large.glb" id="21_l0wcx"]
+[ext_resource type="PackedScene" uid="uid://cu024dh5pxbhq" path="res://TestFiles/Tiles/block-grass-low-long.glb" id="22_4wodk"]
+[ext_resource type="PackedScene" uid="uid://epyavmaqbft6" path="res://TestFiles/Tiles/block-grass-low-narrow.glb" id="23_7vbd8"]
+[ext_resource type="PackedScene" uid="uid://bo8rfyyravffp" path="res://TestFiles/Tiles/block-grass-low.glb" id="24_8ifjt"]
+[ext_resource type="PackedScene" uid="uid://kec73rgok3w8" path="res://TestFiles/Tiles/block-grass-narrow.glb" id="25_6jsoy"]
+[ext_resource type="PackedScene" uid="uid://cu2880f6xieir" path="res://TestFiles/Tiles/block-grass-overhang-corner.glb" id="26_fgq80"]
+[ext_resource type="PackedScene" uid="uid://1qx7q0kqnjh1" path="res://TestFiles/Tiles/block-grass-overhang-edge.glb" id="27_w81fx"]
+[ext_resource type="PackedScene" uid="uid://d05q2dl2musmf" path="res://TestFiles/Tiles/block-grass-overhang-hexagon.glb" id="28_n042u"]
+[ext_resource type="PackedScene" uid="uid://cuwectijyoke8" path="res://TestFiles/Tiles/block-grass-overhang-large-slope-narrow.glb" id="29_d0nbu"]
+[ext_resource type="PackedScene" uid="uid://bcvatjf6eta5s" path="res://TestFiles/Tiles/block-grass-overhang-large-slope-steep-narrow.glb" id="30_yulad"]
+[ext_resource type="PackedScene" uid="uid://b0ai4qywanq52" path="res://TestFiles/Tiles/block-grass-overhang-large-slope-steep.glb" id="31_o2fpt"]
+[ext_resource type="PackedScene" uid="uid://yqiver62hu75" path="res://TestFiles/Tiles/block-grass-overhang-large-slope.glb" id="32_ombh4"]
+[ext_resource type="PackedScene" uid="uid://ce33e5dcu2r8d" path="res://TestFiles/Tiles/block-grass-overhang-large-tall.glb" id="33_smo7d"]
+[ext_resource type="PackedScene" uid="uid://bbnv6hkidfydm" path="res://TestFiles/Tiles/block-grass-overhang-large.glb" id="34_qvi1q"]
+[ext_resource type="PackedScene" uid="uid://1jj6xrdo06rg" path="res://TestFiles/Tiles/block-grass-overhang-long.glb" id="35_g2ibj"]
+[ext_resource type="PackedScene" uid="uid://dhwe37j72ukvd" path="res://TestFiles/Tiles/block-grass-overhang-low-hexagon.glb" id="36_qocja"]
+[ext_resource type="PackedScene" uid="uid://bawn85hn3bxrs" path="res://TestFiles/Tiles/block-grass-overhang-low-large.glb" id="37_bq0ep"]
+[ext_resource type="PackedScene" uid="uid://0dw8ss6sj8im" path="res://TestFiles/Tiles/block-grass-overhang-low-long.glb" id="38_l75d2"]
+[ext_resource type="PackedScene" uid="uid://w2a3v22t6fvq" path="res://TestFiles/Tiles/block-grass-overhang-low-narrow.glb" id="39_xnvbv"]
+[ext_resource type="PackedScene" uid="uid://hv1sxrmvp37p" path="res://TestFiles/Tiles/block-grass-overhang-low.glb" id="40_bui4k"]
+[ext_resource type="PackedScene" uid="uid://dgvwsjwq24i40" path="res://TestFiles/Tiles/block-grass-overhang-narrow.glb" id="41_ot2yk"]
+[ext_resource type="PackedScene" uid="uid://crkjsq5087k27" path="res://TestFiles/Tiles/block-grass.glb" id="42_4urtq"]
+[ext_resource type="PackedScene" uid="uid://dh0t7pug2urt8" path="res://TestFiles/Tiles/block-moving-blue.glb" id="43_0mqua"]
+[ext_resource type="PackedScene" uid="uid://brqgmnqf53lo8" path="res://TestFiles/Tiles/block-moving-large.glb" id="44_qa50y"]
+[ext_resource type="PackedScene" uid="uid://dhqpor7av40on" path="res://TestFiles/Tiles/block-moving.glb" id="45_md2jm"]
+[ext_resource type="PackedScene" uid="uid://b0dxsgkjpa0y7" path="res://TestFiles/Tiles/block-snow-corner-low.glb" id="46_qpw23"]
+[ext_resource type="PackedScene" uid="uid://bj8gijgv6vp4o" path="res://TestFiles/Tiles/block-snow-corner-overhang-low.glb" id="47_51pnd"]
+[ext_resource type="PackedScene" uid="uid://cctt5jsatndlm" path="res://TestFiles/Tiles/block-snow-corner-overhang.glb" id="48_t7yr5"]
+[ext_resource type="PackedScene" uid="uid://b01mbgun22qvf" path="res://TestFiles/Tiles/block-snow-corner.glb" id="49_lgmm1"]
+[ext_resource type="PackedScene" uid="uid://cndrmcekdvmth" path="res://TestFiles/Tiles/block-snow-curve-half.glb" id="50_5mnrf"]
+[ext_resource type="PackedScene" uid="uid://ju84djh4uh8j" path="res://TestFiles/Tiles/block-snow-curve-low.glb" id="51_bxk8l"]
+[ext_resource type="PackedScene" uid="uid://c6gfnnc5p7m4i" path="res://TestFiles/Tiles/block-snow-curve.glb" id="52_o4iak"]
+[ext_resource type="PackedScene" uid="uid://d1t54xdya30dx" path="res://TestFiles/Tiles/block-snow-edge.glb" id="53_ji6jk"]
+[ext_resource type="PackedScene" uid="uid://bafsyy8pe0j8q" path="res://TestFiles/Tiles/block-snow-hexagon.glb" id="54_l0vyg"]
+[ext_resource type="PackedScene" uid="uid://4ktgxytlb6pi" path="res://TestFiles/Tiles/block-snow-large-slope-narrow.glb" id="55_j3mli"]
+[ext_resource type="PackedScene" uid="uid://dvp6i8pmmijf4" path="res://TestFiles/Tiles/block-snow-large-slope-steep-narrow.glb" id="56_22tqp"]
+[ext_resource type="PackedScene" uid="uid://10qrx8ys6dp1" path="res://TestFiles/Tiles/block-snow-large-slope-steep.glb" id="57_rifeo"]
+[ext_resource type="PackedScene" uid="uid://8nbctuay8owr" path="res://TestFiles/Tiles/block-snow-large-slope.glb" id="58_pt66r"]
+[ext_resource type="PackedScene" uid="uid://cqldvqryvyurn" path="res://TestFiles/Tiles/block-snow-large-tall.glb" id="59_bteky"]
+[ext_resource type="PackedScene" uid="uid://c8t7d4n5v877g" path="res://TestFiles/Tiles/block-snow-large.glb" id="60_4dsq4"]
+[ext_resource type="PackedScene" uid="uid://c7kw11a5qooow" path="res://TestFiles/Tiles/block-snow-long.glb" id="61_hy5ha"]
+[ext_resource type="PackedScene" uid="uid://dfli5h8gpm7tj" path="res://TestFiles/Tiles/block-snow-low-hexagon.glb" id="62_n0qv1"]
+[ext_resource type="PackedScene" uid="uid://b12u4p0ctg00y" path="res://TestFiles/Tiles/block-snow-low-large.glb" id="63_rscd7"]
+[ext_resource type="PackedScene" uid="uid://bl558hti83pwo" path="res://TestFiles/Tiles/block-snow-low-long.glb" id="64_3vmiw"]
+[ext_resource type="PackedScene" uid="uid://c26mc66fldbim" path="res://TestFiles/Tiles/block-snow-low-narrow.glb" id="65_4jdym"]
+[ext_resource type="PackedScene" uid="uid://drk44swu4ulub" path="res://TestFiles/Tiles/block-snow-low.glb" id="66_bqi8y"]
+[ext_resource type="PackedScene" uid="uid://ch5tc6le3w0xj" path="res://TestFiles/Tiles/block-snow-narrow.glb" id="67_rh7o6"]
+[ext_resource type="PackedScene" uid="uid://cew3i0ubsy78p" path="res://TestFiles/Tiles/block-snow-overhang-corner.glb" id="68_54gix"]
+[ext_resource type="PackedScene" uid="uid://c4plt8d120cq4" path="res://TestFiles/Tiles/block-snow-overhang-edge.glb" id="69_22g0o"]
+[ext_resource type="PackedScene" uid="uid://cv6fqawx40osy" path="res://TestFiles/Tiles/block-snow-overhang-hexagon.glb" id="70_r744x"]
+[ext_resource type="PackedScene" uid="uid://di2q5kg0bm84v" path="res://TestFiles/Tiles/block-snow-overhang-large-slope-narrow.glb" id="71_jxotl"]
+[ext_resource type="PackedScene" uid="uid://br5ljm5pkdfqq" path="res://TestFiles/Tiles/block-snow-overhang-large-slope-steep-narrow.glb" id="72_4ohue"]
+[ext_resource type="PackedScene" uid="uid://dpr8bvsah1y43" path="res://TestFiles/Tiles/block-snow-overhang-large-slope-steep.glb" id="73_5sc0g"]
+[ext_resource type="PackedScene" uid="uid://dh72gdijnmala" path="res://TestFiles/Tiles/block-snow-overhang-large-slope.glb" id="74_eg6f6"]
+[ext_resource type="PackedScene" uid="uid://dbwi1yb11wgr4" path="res://TestFiles/Tiles/block-snow-overhang-large-tall.glb" id="75_iv7ha"]
+[ext_resource type="PackedScene" uid="uid://f3fhuw0kvxdh" path="res://TestFiles/Tiles/block-snow-overhang-large.glb" id="76_k4dmg"]
+[ext_resource type="PackedScene" uid="uid://bxtb4it8dvixb" path="res://TestFiles/Tiles/block-snow-overhang-long.glb" id="77_l027c"]
+[ext_resource type="PackedScene" uid="uid://bpanxtevc4i45" path="res://TestFiles/Tiles/block-snow-overhang-low-hexagon.glb" id="78_61adv"]
+[ext_resource type="PackedScene" uid="uid://cab308ckxw1fc" path="res://TestFiles/Tiles/block-snow-overhang-low-large.glb" id="79_oypju"]
+[ext_resource type="PackedScene" uid="uid://cm5apphbq6w53" path="res://TestFiles/Tiles/block-snow-overhang-low-long.glb" id="80_y0uss"]
+[ext_resource type="PackedScene" uid="uid://cl6fxy6mmvukh" path="res://TestFiles/Tiles/block-snow-overhang-low-narrow.glb" id="81_piuit"]
+[ext_resource type="PackedScene" uid="uid://bm2e3sbsl6cxc" path="res://TestFiles/Tiles/block-snow-overhang-low.glb" id="82_lkggr"]
+[ext_resource type="PackedScene" uid="uid://c8j263yk2ex8q" path="res://TestFiles/Tiles/block-snow-overhang-narrow.glb" id="83_3kq7g"]
+[ext_resource type="PackedScene" uid="uid://bb3w2r7aj4yd0" path="res://TestFiles/Tiles/block-snow.glb" id="84_we1db"]
+[ext_resource type="PackedScene" uid="uid://nk2bf22y3xmr" path="res://TestFiles/Tiles/bomb.glb" id="85_3lanj"]
+[ext_resource type="PackedScene" uid="uid://pn1jsime0bqp" path="res://TestFiles/Tiles/brick.glb" id="86_h16o5"]
+[ext_resource type="PackedScene" uid="uid://c1ly1h622ajr4" path="res://TestFiles/Tiles/button-round.glb" id="87_0iae4"]
+[ext_resource type="PackedScene" uid="uid://66cbb0kf3701" path="res://TestFiles/Tiles/button-square.glb" id="88_1ao5t"]
+[ext_resource type="PackedScene" uid="uid://2jvqrr43f0jq" path="res://TestFiles/Tiles/character-oobi.glb" id="89_6466p"]
+[ext_resource type="PackedScene" uid="uid://12gfj73c4a84" path="res://TestFiles/Tiles/character-oodi.glb" id="90_q4hdy"]
+[ext_resource type="PackedScene" uid="uid://bojviak53qqqi" path="res://TestFiles/Tiles/character-ooli.glb" id="91_swx0m"]
+[ext_resource type="PackedScene" uid="uid://djg373s50lu05" path="res://TestFiles/Tiles/character-oopi.glb" id="92_xslyv"]
+[ext_resource type="PackedScene" uid="uid://30alm15g3bye" path="res://TestFiles/Tiles/character-oozi.glb" id="93_1o7hm"]
+[ext_resource type="PackedScene" uid="uid://bnnjnrm2g1jly" path="res://TestFiles/Tiles/chest.glb" id="94_eordv"]
+[ext_resource type="PackedScene" uid="uid://bt1ednkhu4suy" path="res://TestFiles/Tiles/coin-bronze.glb" id="95_j6m82"]
+[ext_resource type="PackedScene" uid="uid://bsn46xewxyqfg" path="res://TestFiles/Tiles/coin-gold.glb" id="96_tj7os"]
+[ext_resource type="PackedScene" uid="uid://br7k73boko244" path="res://TestFiles/Tiles/coin-silver.glb" id="97_42062"]
+[ext_resource type="PackedScene" uid="uid://cy1y7b4anific" path="res://TestFiles/Tiles/conveyor-belt.glb" id="98_jiakj"]
+[ext_resource type="PackedScene" uid="uid://ce17c68vg61m5" path="res://TestFiles/Tiles/crate-item-strong.glb" id="99_n3cpu"]
+[ext_resource type="PackedScene" uid="uid://b2oupyfy3cr3g" path="res://TestFiles/Tiles/crate-item.glb" id="100_hyiyf"]
+[ext_resource type="PackedScene" uid="uid://7nwfsl5cluln" path="res://TestFiles/Tiles/crate-strong.glb" id="101_08kjm"]
+[ext_resource type="PackedScene" uid="uid://blvam661o5y7p" path="res://TestFiles/Tiles/crate.glb" id="102_1hase"]
+[ext_resource type="PackedScene" uid="uid://sh2g3odcf0so" path="res://TestFiles/Tiles/door-large-open.glb" id="103_gfwnn"]
+[ext_resource type="PackedScene" uid="uid://blulo7ajpb6hy" path="res://TestFiles/Tiles/door-open.glb" id="104_kgy4h"]
+[ext_resource type="PackedScene" uid="uid://1872ingqa4a8" path="res://TestFiles/Tiles/door-rotate-large.glb" id="105_o08bx"]
+[ext_resource type="PackedScene" uid="uid://clprkeq6qon82" path="res://TestFiles/Tiles/door-rotate.glb" id="106_erggy"]
+[ext_resource type="PackedScene" uid="uid://dki5dbbcast0f" path="res://TestFiles/Tiles/fence-broken.glb" id="107_6jhbm"]
+[ext_resource type="PackedScene" uid="uid://28n4nk4jak8b" path="res://TestFiles/Tiles/fence-corner-curved.glb" id="108_th8wh"]
+[ext_resource type="PackedScene" uid="uid://dgyuh4ecebwl2" path="res://TestFiles/Tiles/fence-corner.glb" id="109_6x5dy"]
+[ext_resource type="PackedScene" uid="uid://b2efippi1bl8r" path="res://TestFiles/Tiles/fence-low-broken.glb" id="110_6ng8s"]
+[ext_resource type="PackedScene" uid="uid://cbs3g6scabhb" path="res://TestFiles/Tiles/fence-low-corner-curved.glb" id="111_706f0"]
+[ext_resource type="PackedScene" uid="uid://cd5gyh2kntqnh" path="res://TestFiles/Tiles/fence-low-corner.glb" id="112_pl484"]
+[ext_resource type="PackedScene" uid="uid://b0hmf3u46sjlu" path="res://TestFiles/Tiles/fence-low-straight.glb" id="113_3uqon"]
+[ext_resource type="PackedScene" uid="uid://cqij6ftkdikbb" path="res://TestFiles/Tiles/fence-rope.glb" id="114_qm6wj"]
+[ext_resource type="PackedScene" uid="uid://dabxlu2cmyvmv" path="res://TestFiles/Tiles/fence-straight.glb" id="115_i2bfv"]
+[ext_resource type="PackedScene" uid="uid://be5wx0aexp8k7" path="res://TestFiles/Tiles/flag.glb" id="116_w8gxj"]
+[ext_resource type="PackedScene" uid="uid://yi3esc7tgpnr" path="res://TestFiles/Tiles/flowers-tall.glb" id="117_xe3e6"]
+[ext_resource type="PackedScene" uid="uid://c0m6le8uxqtbx" path="res://TestFiles/Tiles/flowers.glb" id="118_ti4xe"]
+[ext_resource type="PackedScene" uid="uid://cwu57mtbd1o8o" path="res://TestFiles/Tiles/grass.glb" id="119_3l7tq"]
+[ext_resource type="PackedScene" uid="uid://dna8xfjqvqqmu" path="res://TestFiles/Tiles/heart.glb" id="120_ishsj"]
+[ext_resource type="PackedScene" uid="uid://dmtt8wgn8kdfh" path="res://TestFiles/Tiles/hedge-corner.glb" id="121_pjx7e"]
+[ext_resource type="PackedScene" uid="uid://bl5rruwc4mxqb" path="res://TestFiles/Tiles/hedge.glb" id="122_shxjd"]
+[ext_resource type="PackedScene" uid="uid://dyycn3ksjtvut" path="res://TestFiles/Tiles/jewel.glb" id="123_dlem4"]
+[ext_resource type="PackedScene" uid="uid://ba51p31w6lr6l" path="res://TestFiles/Tiles/key.glb" id="124_2p1fr"]
+[ext_resource type="PackedScene" uid="uid://c578c4vh0xtgg" path="res://TestFiles/Tiles/ladder-broken.glb" id="125_wycnb"]
+[ext_resource type="PackedScene" uid="uid://cqn3puynkxrey" path="res://TestFiles/Tiles/ladder-long.glb" id="126_bbk0q"]
+[ext_resource type="PackedScene" uid="uid://bt2d48fm3mngi" path="res://TestFiles/Tiles/ladder.glb" id="127_qr5jc"]
+[ext_resource type="PackedScene" uid="uid://hgj57sk1yp86" path="res://TestFiles/Tiles/lever.glb" id="128_1m7wb"]
+[ext_resource type="PackedScene" uid="uid://bh53nke7pychc" path="res://TestFiles/Tiles/lock.glb" id="129_wuwow"]
+[ext_resource type="PackedScene" uid="uid://c6bkcic1npkk2" path="res://TestFiles/Tiles/mushrooms.glb" id="130_2n2cp"]
+[ext_resource type="PackedScene" uid="uid://bty3xvspcamtb" path="res://TestFiles/Tiles/pipe.glb" id="131_ecu2h"]
+[ext_resource type="PackedScene" uid="uid://crtcntrelby0r" path="res://TestFiles/Tiles/plant.glb" id="132_6l2un"]
+[ext_resource type="PackedScene" uid="uid://cc8nv0qhddwyd" path="res://TestFiles/Tiles/platform-fortified.glb" id="133_mobu5"]
+[ext_resource type="PackedScene" uid="uid://dlb8idsunkvvd" path="res://TestFiles/Tiles/platform-overhang.glb" id="134_cn8ua"]
+[ext_resource type="PackedScene" uid="uid://dmtklqw8s6a25" path="res://TestFiles/Tiles/platform-ramp.glb" id="135_x55b3"]
+[ext_resource type="PackedScene" uid="uid://dh2jejarhv2ub" path="res://TestFiles/Tiles/platform.glb" id="136_dksuw"]
+[ext_resource type="PackedScene" uid="uid://dkbt2q66i67r8" path="res://TestFiles/Tiles/poles.glb" id="137_yw0qp"]
+[ext_resource type="PackedScene" uid="uid://c6dchynt1ma1y" path="res://TestFiles/Tiles/rocks.glb" id="138_8h6sw"]
+[ext_resource type="PackedScene" uid="uid://q8e33dw5nenc" path="res://TestFiles/Tiles/saw.glb" id="139_3krur"]
+[ext_resource type="PackedScene" uid="uid://buoeh81volsjs" path="res://TestFiles/Tiles/sign.glb" id="140_vlaub"]
+[ext_resource type="PackedScene" uid="uid://bkfsn1cet5v7x" path="res://TestFiles/Tiles/spike-block-wide.glb" id="141_wx0wj"]
+[ext_resource type="PackedScene" uid="uid://bmru07bljgo50" path="res://TestFiles/Tiles/spike-block.glb" id="142_xwpib"]
+[ext_resource type="PackedScene" uid="uid://cw8jkjl6et6h8" path="res://TestFiles/Tiles/spring.glb" id="143_6i28n"]
+[ext_resource type="PackedScene" uid="uid://b782k1r8yuj5r" path="res://TestFiles/Tiles/star.glb" id="144_2kgbj"]
+[ext_resource type="PackedScene" uid="uid://b0tmiy1s1dysj" path="res://TestFiles/Tiles/stones.glb" id="145_d1u2n"]
+[ext_resource type="PackedScene" uid="uid://nn7jqh6j6aid" path="res://TestFiles/Tiles/trap-spikes-large.glb" id="146_tdtbk"]
+[ext_resource type="PackedScene" uid="uid://b7nt6s80fscbn" path="res://TestFiles/Tiles/trap-spikes.glb" id="147_tk067"]
+[ext_resource type="PackedScene" uid="uid://jmnn26mfaav0" path="res://TestFiles/Tiles/tree-pine-small.glb" id="148_fs0e8"]
+[ext_resource type="PackedScene" uid="uid://kxrh0dlhhhb" path="res://TestFiles/Tiles/tree-pine-snow-small.glb" id="149_8yqlw"]
+[ext_resource type="PackedScene" uid="uid://nvql6e4bbuo1" path="res://TestFiles/Tiles/tree-pine-snow.glb" id="150_84qme"]
+[ext_resource type="PackedScene" uid="uid://02a4xadwy7fn" path="res://TestFiles/Tiles/tree-pine.glb" id="151_2c7xj"]
+[ext_resource type="PackedScene" uid="uid://b6j68pmrgq67q" path="res://TestFiles/Tiles/tree-snow.glb" id="152_4bc4e"]
+[ext_resource type="PackedScene" uid="uid://b5p48ad1omnvl" path="res://TestFiles/Tiles/tree.glb" id="153_8ym6b"]
+[ext_resource type="Texture2D" uid="uid://gbdaf44erovx" path="res://TestFiles/colored-transparent.png" id="154_iw63q"]
+[ext_resource type="Texture2D" uid="uid://bmuae2e8tv8hj" path="res://TestFiles/Idle.png" id="155_waoeo"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_paxp6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a3cm7"]
+atlas = ExtResource("155_waoeo")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ssuxk"]
+atlas = ExtResource("155_waoeo")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wstgx"]
+atlas = ExtResource("155_waoeo")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uqgs3"]
+atlas = ExtResource("155_waoeo")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_siilh"]
+atlas = ExtResource("155_waoeo")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1hjbd"]
+atlas = ExtResource("155_waoeo")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gno3w"]
+atlas = ExtResource("155_waoeo")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dvwds"]
+atlas = ExtResource("155_waoeo")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a2ik7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a3cm7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ssuxk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wstgx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uqgs3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_siilh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1hjbd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gno3w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dvwds")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[node name="Node3D" type="Node3D" unique_id=1261115048]
+
+[node name="Tiles" type="Node3D" parent="." unique_id=1716711292]
+visible = false
+
+[node name="arrow2" parent="Tiles" unique_id=384810610 instance=ExtResource("1_q2ux0")]
+
+[node name="arrows2" parent="Tiles" unique_id=254666015 instance=ExtResource("2_waoeo")]
+
+[node name="barrel2" parent="Tiles" unique_id=811213827 instance=ExtResource("3_a3cm7")]
+
+[node name="block-grass-corner-low2" parent="Tiles" unique_id=2142899242 instance=ExtResource("4_ssuxk")]
+
+[node name="block-grass-corner-overhang-low2" parent="Tiles" unique_id=1584442121 instance=ExtResource("5_wstgx")]
+
+[node name="block-grass-corner-overhang2" parent="Tiles" unique_id=1550977195 instance=ExtResource("6_uqgs3")]
+
+[node name="block-grass-corner2" parent="Tiles" unique_id=962269113 instance=ExtResource("7_siilh")]
+
+[node name="block-grass-curve-half2" parent="Tiles" unique_id=878729797 instance=ExtResource("8_1hjbd")]
+
+[node name="block-grass-curve-low2" parent="Tiles" unique_id=1059563801 instance=ExtResource("9_gno3w")]
+
+[node name="block-grass-curve2" parent="Tiles" unique_id=1760205197 instance=ExtResource("10_dvwds")]
+
+[node name="block-grass-edge2" parent="Tiles" unique_id=1030482390 instance=ExtResource("11_a2ik7")]
+
+[node name="block-grass-hexagon2" parent="Tiles" unique_id=310081666 instance=ExtResource("12_qmqx2")]
+
+[node name="block-grass-large-slope-narrow2" parent="Tiles" unique_id=1306998796 instance=ExtResource("13_2cax5")]
+
+[node name="block-grass-large-slope-steep-narrow2" parent="Tiles" unique_id=14738759 instance=ExtResource("14_ks55q")]
+
+[node name="block-grass-large-slope-steep2" parent="Tiles" unique_id=1591160696 instance=ExtResource("15_xljsu")]
+
+[node name="block-grass-large-slope2" parent="Tiles" unique_id=1928748124 instance=ExtResource("16_4g3xf")]
+
+[node name="block-grass-large-tall2" parent="Tiles" unique_id=88673009 instance=ExtResource("17_7gx84")]
+
+[node name="block-grass-large2" parent="Tiles" unique_id=646007398 instance=ExtResource("18_0kw80")]
+
+[node name="block-grass-long2" parent="Tiles" unique_id=2097522509 instance=ExtResource("19_1rda0")]
+
+[node name="block-grass-low-hexagon2" parent="Tiles" unique_id=1964169792 instance=ExtResource("20_b60iw")]
+
+[node name="block-grass-low-large2" parent="Tiles" unique_id=1693182852 instance=ExtResource("21_l0wcx")]
+
+[node name="block-grass-low-long2" parent="Tiles" unique_id=1814309559 instance=ExtResource("22_4wodk")]
+
+[node name="block-grass-low-narrow2" parent="Tiles" unique_id=1156660404 instance=ExtResource("23_7vbd8")]
+
+[node name="block-grass-low2" parent="Tiles" unique_id=1785196716 instance=ExtResource("24_8ifjt")]
+
+[node name="block-grass-narrow2" parent="Tiles" unique_id=740715199 instance=ExtResource("25_6jsoy")]
+
+[node name="block-grass-overhang-corner2" parent="Tiles" unique_id=858422781 instance=ExtResource("26_fgq80")]
+
+[node name="block-grass-overhang-edge2" parent="Tiles" unique_id=1492836811 instance=ExtResource("27_w81fx")]
+
+[node name="block-grass-overhang-hexagon2" parent="Tiles" unique_id=2071627735 instance=ExtResource("28_n042u")]
+
+[node name="block-grass-overhang-large-slope-narrow2" parent="Tiles" unique_id=1437062118 instance=ExtResource("29_d0nbu")]
+
+[node name="block-grass-overhang-large-slope-steep-narrow2" parent="Tiles" unique_id=953572498 instance=ExtResource("30_yulad")]
+
+[node name="block-grass-overhang-large-slope-steep2" parent="Tiles" unique_id=1033662198 instance=ExtResource("31_o2fpt")]
+
+[node name="block-grass-overhang-large-slope2" parent="Tiles" unique_id=1631813835 instance=ExtResource("32_ombh4")]
+
+[node name="block-grass-overhang-large-tall2" parent="Tiles" unique_id=2043141560 instance=ExtResource("33_smo7d")]
+
+[node name="block-grass-overhang-large2" parent="Tiles" unique_id=1108744217 instance=ExtResource("34_qvi1q")]
+
+[node name="block-grass-overhang-long2" parent="Tiles" unique_id=57480381 instance=ExtResource("35_g2ibj")]
+
+[node name="block-grass-overhang-low-hexagon2" parent="Tiles" unique_id=1235179201 instance=ExtResource("36_qocja")]
+
+[node name="block-grass-overhang-low-large2" parent="Tiles" unique_id=1600728317 instance=ExtResource("37_bq0ep")]
+
+[node name="block-grass-overhang-low-long2" parent="Tiles" unique_id=1212125446 instance=ExtResource("38_l75d2")]
+
+[node name="block-grass-overhang-low-narrow2" parent="Tiles" unique_id=1347487717 instance=ExtResource("39_xnvbv")]
+
+[node name="block-grass-overhang-low2" parent="Tiles" unique_id=142433834 instance=ExtResource("40_bui4k")]
+
+[node name="block-grass-overhang-narrow2" parent="Tiles" unique_id=346694679 instance=ExtResource("41_ot2yk")]
+
+[node name="block-grass2" parent="Tiles" unique_id=496462506 instance=ExtResource("42_4urtq")]
+
+[node name="block-moving-blue2" parent="Tiles" unique_id=730441285 instance=ExtResource("43_0mqua")]
+
+[node name="block-moving-large2" parent="Tiles" unique_id=144659422 instance=ExtResource("44_qa50y")]
+
+[node name="block-moving2" parent="Tiles" unique_id=187538410 instance=ExtResource("45_md2jm")]
+
+[node name="block-snow-corner-low2" parent="Tiles" unique_id=1000491863 instance=ExtResource("46_qpw23")]
+
+[node name="block-snow-corner-overhang-low2" parent="Tiles" unique_id=1940792117 instance=ExtResource("47_51pnd")]
+
+[node name="block-snow-corner-overhang2" parent="Tiles" unique_id=1022922563 instance=ExtResource("48_t7yr5")]
+
+[node name="block-snow-corner2" parent="Tiles" unique_id=926840670 instance=ExtResource("49_lgmm1")]
+
+[node name="block-snow-curve-half2" parent="Tiles" unique_id=1213662736 instance=ExtResource("50_5mnrf")]
+
+[node name="block-snow-curve-low2" parent="Tiles" unique_id=1913714527 instance=ExtResource("51_bxk8l")]
+
+[node name="block-snow-curve2" parent="Tiles" unique_id=2057935148 instance=ExtResource("52_o4iak")]
+
+[node name="block-snow-edge2" parent="Tiles" unique_id=6791033 instance=ExtResource("53_ji6jk")]
+
+[node name="block-snow-hexagon2" parent="Tiles" unique_id=624015044 instance=ExtResource("54_l0vyg")]
+
+[node name="block-snow-large-slope-narrow2" parent="Tiles" unique_id=1342905755 instance=ExtResource("55_j3mli")]
+
+[node name="block-snow-large-slope-steep-narrow2" parent="Tiles" unique_id=655255020 instance=ExtResource("56_22tqp")]
+
+[node name="block-snow-large-slope-steep2" parent="Tiles" unique_id=1136852304 instance=ExtResource("57_rifeo")]
+
+[node name="block-snow-large-slope2" parent="Tiles" unique_id=1176724803 instance=ExtResource("58_pt66r")]
+
+[node name="block-snow-large-tall2" parent="Tiles" unique_id=576834573 instance=ExtResource("59_bteky")]
+
+[node name="block-snow-large2" parent="Tiles" unique_id=247811620 instance=ExtResource("60_4dsq4")]
+
+[node name="block-snow-long2" parent="Tiles" unique_id=1052854965 instance=ExtResource("61_hy5ha")]
+
+[node name="block-snow-low-hexagon2" parent="Tiles" unique_id=1288998484 instance=ExtResource("62_n0qv1")]
+
+[node name="block-snow-low-large2" parent="Tiles" unique_id=196670649 instance=ExtResource("63_rscd7")]
+
+[node name="block-snow-low-long2" parent="Tiles" unique_id=873347504 instance=ExtResource("64_3vmiw")]
+
+[node name="block-snow-low-narrow2" parent="Tiles" unique_id=1962674681 instance=ExtResource("65_4jdym")]
+
+[node name="block-snow-low2" parent="Tiles" unique_id=1167628915 instance=ExtResource("66_bqi8y")]
+
+[node name="block-snow-narrow2" parent="Tiles" unique_id=596249619 instance=ExtResource("67_rh7o6")]
+
+[node name="block-snow-overhang-corner2" parent="Tiles" unique_id=1612336159 instance=ExtResource("68_54gix")]
+
+[node name="block-snow-overhang-edge2" parent="Tiles" unique_id=800125923 instance=ExtResource("69_22g0o")]
+
+[node name="block-snow-overhang-hexagon2" parent="Tiles" unique_id=1659218964 instance=ExtResource("70_r744x")]
+
+[node name="block-snow-overhang-large-slope-narrow2" parent="Tiles" unique_id=1747670684 instance=ExtResource("71_jxotl")]
+
+[node name="block-snow-overhang-large-slope-steep-narrow2" parent="Tiles" unique_id=1680177997 instance=ExtResource("72_4ohue")]
+
+[node name="block-snow-overhang-large-slope-steep2" parent="Tiles" unique_id=803559971 instance=ExtResource("73_5sc0g")]
+
+[node name="block-snow-overhang-large-slope2" parent="Tiles" unique_id=1787745183 instance=ExtResource("74_eg6f6")]
+
+[node name="block-snow-overhang-large-tall2" parent="Tiles" unique_id=244940714 instance=ExtResource("75_iv7ha")]
+
+[node name="block-snow-overhang-large2" parent="Tiles" unique_id=1821254288 instance=ExtResource("76_k4dmg")]
+
+[node name="block-snow-overhang-long2" parent="Tiles" unique_id=1165929835 instance=ExtResource("77_l027c")]
+
+[node name="block-snow-overhang-low-hexagon2" parent="Tiles" unique_id=991313673 instance=ExtResource("78_61adv")]
+
+[node name="block-snow-overhang-low-large2" parent="Tiles" unique_id=435394403 instance=ExtResource("79_oypju")]
+
+[node name="block-snow-overhang-low-long2" parent="Tiles" unique_id=1358596766 instance=ExtResource("80_y0uss")]
+
+[node name="block-snow-overhang-low-narrow2" parent="Tiles" unique_id=933342497 instance=ExtResource("81_piuit")]
+
+[node name="block-snow-overhang-low2" parent="Tiles" unique_id=373880374 instance=ExtResource("82_lkggr")]
+
+[node name="block-snow-overhang-narrow2" parent="Tiles" unique_id=573492453 instance=ExtResource("83_3kq7g")]
+
+[node name="block-snow2" parent="Tiles" unique_id=677159955 instance=ExtResource("84_we1db")]
+
+[node name="bomb2" parent="Tiles" unique_id=875075595 instance=ExtResource("85_3lanj")]
+
+[node name="brick2" parent="Tiles" unique_id=1498454972 instance=ExtResource("86_h16o5")]
+
+[node name="button-round2" parent="Tiles" unique_id=1106672115 instance=ExtResource("87_0iae4")]
+
+[node name="button-square2" parent="Tiles" unique_id=1066343439 instance=ExtResource("88_1ao5t")]
+
+[node name="character-oobi2" parent="Tiles" unique_id=340071416 instance=ExtResource("89_6466p")]
+
+[node name="character-oodi2" parent="Tiles" unique_id=1476757600 instance=ExtResource("90_q4hdy")]
+
+[node name="character-ooli2" parent="Tiles" unique_id=1409838382 instance=ExtResource("91_swx0m")]
+
+[node name="character-oopi2" parent="Tiles" unique_id=152441734 instance=ExtResource("92_xslyv")]
+
+[node name="character-oozi2" parent="Tiles" unique_id=1543553496 instance=ExtResource("93_1o7hm")]
+
+[node name="chest2" parent="Tiles" unique_id=630277935 instance=ExtResource("94_eordv")]
+
+[node name="coin-bronze2" parent="Tiles" unique_id=201210302 instance=ExtResource("95_j6m82")]
+
+[node name="coin-gold2" parent="Tiles" unique_id=1002619267 instance=ExtResource("96_tj7os")]
+
+[node name="coin-silver2" parent="Tiles" unique_id=352172959 instance=ExtResource("97_42062")]
+
+[node name="conveyor-belt2" parent="Tiles" unique_id=2062626220 instance=ExtResource("98_jiakj")]
+
+[node name="crate-item-strong2" parent="Tiles" unique_id=1951973781 instance=ExtResource("99_n3cpu")]
+
+[node name="crate-item2" parent="Tiles" unique_id=1490568787 instance=ExtResource("100_hyiyf")]
+
+[node name="crate-strong2" parent="Tiles" unique_id=981812132 instance=ExtResource("101_08kjm")]
+
+[node name="crate2" parent="Tiles" unique_id=441003423 instance=ExtResource("102_1hase")]
+
+[node name="door-large-open2" parent="Tiles" unique_id=117802093 instance=ExtResource("103_gfwnn")]
+
+[node name="door-open2" parent="Tiles" unique_id=1003197883 instance=ExtResource("104_kgy4h")]
+
+[node name="door-rotate-large2" parent="Tiles" unique_id=266848120 instance=ExtResource("105_o08bx")]
+
+[node name="door-rotate2" parent="Tiles" unique_id=671390908 instance=ExtResource("106_erggy")]
+
+[node name="fence-broken2" parent="Tiles" unique_id=1760739489 instance=ExtResource("107_6jhbm")]
+
+[node name="fence-corner-curved2" parent="Tiles" unique_id=1676461674 instance=ExtResource("108_th8wh")]
+
+[node name="fence-corner2" parent="Tiles" unique_id=1651732061 instance=ExtResource("109_6x5dy")]
+
+[node name="fence-low-broken2" parent="Tiles" unique_id=241166121 instance=ExtResource("110_6ng8s")]
+
+[node name="fence-low-corner-curved2" parent="Tiles" unique_id=1673682057 instance=ExtResource("111_706f0")]
+
+[node name="fence-low-corner2" parent="Tiles" unique_id=1429363591 instance=ExtResource("112_pl484")]
+
+[node name="fence-low-straight2" parent="Tiles" unique_id=329184464 instance=ExtResource("113_3uqon")]
+
+[node name="fence-rope2" parent="Tiles" unique_id=1898503749 instance=ExtResource("114_qm6wj")]
+
+[node name="fence-straight2" parent="Tiles" unique_id=1548041486 instance=ExtResource("115_i2bfv")]
+
+[node name="flag2" parent="Tiles" unique_id=1751735705 instance=ExtResource("116_w8gxj")]
+
+[node name="flowers-tall2" parent="Tiles" unique_id=1476763179 instance=ExtResource("117_xe3e6")]
+
+[node name="flowers2" parent="Tiles" unique_id=300258362 instance=ExtResource("118_ti4xe")]
+
+[node name="grass2" parent="Tiles" unique_id=840080254 instance=ExtResource("119_3l7tq")]
+
+[node name="heart2" parent="Tiles" unique_id=1481350762 instance=ExtResource("120_ishsj")]
+
+[node name="hedge-corner2" parent="Tiles" unique_id=1017179449 instance=ExtResource("121_pjx7e")]
+
+[node name="hedge2" parent="Tiles" unique_id=1836068105 instance=ExtResource("122_shxjd")]
+
+[node name="jewel2" parent="Tiles" unique_id=873986354 instance=ExtResource("123_dlem4")]
+
+[node name="key2" parent="Tiles" unique_id=342394850 instance=ExtResource("124_2p1fr")]
+
+[node name="ladder-broken2" parent="Tiles" unique_id=548254662 instance=ExtResource("125_wycnb")]
+
+[node name="ladder-long2" parent="Tiles" unique_id=1928514568 instance=ExtResource("126_bbk0q")]
+
+[node name="ladder2" parent="Tiles" unique_id=972094103 instance=ExtResource("127_qr5jc")]
+
+[node name="lever2" parent="Tiles" unique_id=482956224 instance=ExtResource("128_1m7wb")]
+
+[node name="lock2" parent="Tiles" unique_id=478523549 instance=ExtResource("129_wuwow")]
+
+[node name="mushrooms2" parent="Tiles" unique_id=1335893015 instance=ExtResource("130_2n2cp")]
+
+[node name="pipe2" parent="Tiles" unique_id=2070118677 instance=ExtResource("131_ecu2h")]
+
+[node name="plant2" parent="Tiles" unique_id=1908164780 instance=ExtResource("132_6l2un")]
+
+[node name="platform-fortified2" parent="Tiles" unique_id=500545838 instance=ExtResource("133_mobu5")]
+
+[node name="platform-overhang2" parent="Tiles" unique_id=506554393 instance=ExtResource("134_cn8ua")]
+
+[node name="platform-ramp2" parent="Tiles" unique_id=501969659 instance=ExtResource("135_x55b3")]
+
+[node name="platform2" parent="Tiles" unique_id=447304799 instance=ExtResource("136_dksuw")]
+
+[node name="poles2" parent="Tiles" unique_id=755290656 instance=ExtResource("137_yw0qp")]
+
+[node name="rocks2" parent="Tiles" unique_id=302739118 instance=ExtResource("138_8h6sw")]
+
+[node name="saw2" parent="Tiles" unique_id=1443376811 instance=ExtResource("139_3krur")]
+
+[node name="sign2" parent="Tiles" unique_id=732757140 instance=ExtResource("140_vlaub")]
+
+[node name="spike-block-wide2" parent="Tiles" unique_id=478277659 instance=ExtResource("141_wx0wj")]
+
+[node name="spike-block2" parent="Tiles" unique_id=1433079082 instance=ExtResource("142_xwpib")]
+
+[node name="spring3" parent="Tiles" unique_id=1193154805 instance=ExtResource("143_6i28n")]
+
+[node name="star2" parent="Tiles" unique_id=1991156186 instance=ExtResource("144_2kgbj")]
+
+[node name="stones2" parent="Tiles" unique_id=185775273 instance=ExtResource("145_d1u2n")]
+
+[node name="trap-spikes-large2" parent="Tiles" unique_id=1853549818 instance=ExtResource("146_tdtbk")]
+
+[node name="trap-spikes2" parent="Tiles" unique_id=1438462671 instance=ExtResource("147_tk067")]
+
+[node name="tree-pine-small2" parent="Tiles" unique_id=844031962 instance=ExtResource("148_fs0e8")]
+
+[node name="tree-pine-snow-small2" parent="Tiles" unique_id=494672762 instance=ExtResource("149_8yqlw")]
+
+[node name="tree-pine-snow2" parent="Tiles" unique_id=1107151633 instance=ExtResource("150_84qme")]
+
+[node name="tree-pine2" parent="Tiles" unique_id=133622749 instance=ExtResource("151_2c7xj")]
+
+[node name="tree-snow2" parent="Tiles" unique_id=1359727713 instance=ExtResource("152_4bc4e")]
+
+[node name="tree2" parent="Tiles" unique_id=100528558 instance=ExtResource("153_8ym6b")]
+
+[node name="Sprites" type="Node3D" parent="." unique_id=1538985153]
+
+[node name="Sprite3D" type="Sprite3D" parent="Sprites" unique_id=1743495171]
+visible = false
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("154_iw63q")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Sprites" unique_id=1949335956]
+transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 10, 0, 0, 0)
+mesh = SubResource("BoxMesh_paxp6")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Sprites" unique_id=1191822850]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3841858e-07, 1.3843201, -1.8929379)
+shadow_enabled = true
+
+[node name="Enemy" type="AnimatedSprite3D" parent="Sprites" unique_id=1719783146]
+transform = Transform3D(0.015044197, 0, 0.9998868, 0, 1, 0, -0.9998868, 0, 0.015044197, -0.0492177, 1.5578524, -1.6136484)
+alpha_cut = 2
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_a2ik7")
+animation = &"Idle"
+frame_progress = 0.39304826
