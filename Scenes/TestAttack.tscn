@@ -40,6 +40,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_gmuc8"]
+size = Vector3(0.37353516, 0.6597595, 0.25)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_a3cm7"]
 atlas = ExtResource("2_6m5ak")
 region = Rect2(0, 0, 128, 128)
@@ -104,6 +107,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_6m5ak"]
+size = Vector3(1, 1.1420898, 0.03640747)
+
 [node name="Node3D" type="Node3D" unique_id=1465432829]
 
 [node name="Hero" type="Node3D" parent="." unique_id=239892126]
@@ -117,6 +123,12 @@ animation = &"Idle"
 frame = 3
 frame_progress = 0.03679749
 
+[node name="Area3D" type="Area3D" parent="Hero" unique_id=1772117130]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hero/Area3D" unique_id=111227159]
+transform = Transform3D(0.9998977, 0, -6.0467187e-12, 0, 0.9997899, 0, -4.3485215e-12, 0, 0.9999989, -0.29123902, -0.33565295, 0.0016786158)
+shape = SubResource("BoxShape3D_gmuc8")
+
 [node name="Enemy" type="Node3D" parent="." unique_id=458766658]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.3144729, 1.709, -0.31974387)
 
@@ -129,6 +141,12 @@ animation = &"Idle"
 frame = 7
 frame_progress = 0.25175032
 
+[node name="Area3D" type="Area3D" parent="Enemy" unique_id=1691322223]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Enemy/Area3D" unique_id=1264927331]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4901161e-07, -0.07104492, 0.023513794)
+shape = SubResource("BoxShape3D_6m5ak")
+
 [node name="GridMap" type="GridMap" parent="." unique_id=1213516319]
 mesh_library = ExtResource("1_jyygi")
 cell_size = Vector3(1, 0.1, 1)
@@ -137,4 +155,9 @@ data = {
 }
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1557296814]
-transform = Transform3D(-3.7706688e-08, -0.50583804, 0.86262846, -2.2110882e-08, 0.86262846, 0.50583804, -1, 0, -4.371139e-08, 2.779645, 2.829124, 1.2077999)
+transform = Transform3D(-3.7706688e-08, -0.50583804, 0.86262846, -2.2110882e-08, 0.86262846, 0.50583804, -1, 1.7763568e-15, -4.371139e-08, 2.779645, 2.829124, 1.513138)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1986628010]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.32249624, 3.833984, 0.83119524)
+light_energy = 2.053
+shadow_enabled = true
