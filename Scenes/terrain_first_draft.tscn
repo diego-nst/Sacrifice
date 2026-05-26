@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://cp74qbc0ukm72"]
+
+[ext_resource type="PackedScene" uid="uid://deo4lci0karvw" path="res://TestFiles/Terrain_first_draft.fbx" id="1_4ewer"]
+
+[node name="Terrain_first_draft" unique_id=1613608903 groups=["pathable"] instance=ExtResource("1_4ewer")]

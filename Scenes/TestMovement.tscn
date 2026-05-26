@@ -1,26 +1,27 @@
-[gd_scene format=3 uid="uid://cajruwbd41pcy"]
+[gd_scene format=3 uid="uid://c4mey0qgd8ch"]
 
-[ext_resource type="Texture2D" uid="uid://bu4ek17pux2k8" path="res://TestFiles/KnightIdle.png" id="1_gmuc8"]
-[ext_resource type="Script" uid="uid://bigydq5x1r422" path="res://Scripts/SetUnitDetails.gd" id="1_h2va5"]
-[ext_resource type="Script" uid="uid://bhtf14bhbuy5p" path="res://Scripts/BH&Nav.gd" id="1_xl1ln"]
-[ext_resource type="Texture2D" uid="uid://bmuae2e8tv8hj" path="res://TestFiles/Idle.png" id="2_6m5ak"]
-[ext_resource type="Script" uid="uid://ddh36d2ghkexv" path="res://Scripts/Unit.gd" id="2_xl1ln"]
-[ext_resource type="PackedScene" uid="uid://cp74qbc0ukm72" path="res://Scenes/terrain_first_draft.tscn" id="7_owwht"]
+[ext_resource type="Script" uid="uid://bhtf14bhbuy5p" path="res://Scripts/BH&Nav.gd" id="1_iiqnd"]
+[ext_resource type="Script" uid="uid://bdxhquxfdguu5" path="res://Scripts/AStar.gd" id="2_4y04l"]
+[ext_resource type="Script" uid="uid://bigydq5x1r422" path="res://Scripts/SetUnitDetails.gd" id="2_o3pug"]
+[ext_resource type="Script" uid="uid://ddh36d2ghkexv" path="res://Scripts/Unit.gd" id="3_4y04l"]
+[ext_resource type="Texture2D" uid="uid://bu4ek17pux2k8" path="res://TestFiles/KnightIdle.png" id="4_okw2d"]
+[ext_resource type="Texture2D" uid="uid://bmuae2e8tv8hj" path="res://TestFiles/Idle.png" id="5_k6q2w"]
+[ext_resource type="MeshLibrary" uid="uid://bk3p4ngjywbey" path="res://TestFiles/tiles.meshlib" id="7_okw2d"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h2va5"]
-atlas = ExtResource("1_gmuc8")
+atlas = ExtResource("4_okw2d")
 region = Rect2(0, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xl1ln"]
-atlas = ExtResource("1_gmuc8")
+atlas = ExtResource("4_okw2d")
 region = Rect2(128, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_owwht"]
-atlas = ExtResource("1_gmuc8")
+atlas = ExtResource("4_okw2d")
 region = Rect2(256, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mfp1l"]
-atlas = ExtResource("1_gmuc8")
+atlas = ExtResource("4_okw2d")
 region = Rect2(384, 0, 128, 128)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_47rdr"]
@@ -47,35 +48,35 @@ animations = [{
 size = Vector3(0.37353516, 0.6597595, 0.05505371)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a3cm7"]
-atlas = ExtResource("2_6m5ak")
+atlas = ExtResource("5_k6q2w")
 region = Rect2(0, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ssuxk"]
-atlas = ExtResource("2_6m5ak")
+atlas = ExtResource("5_k6q2w")
 region = Rect2(128, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wstgx"]
-atlas = ExtResource("2_6m5ak")
+atlas = ExtResource("5_k6q2w")
 region = Rect2(256, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uqgs3"]
-atlas = ExtResource("2_6m5ak")
+atlas = ExtResource("5_k6q2w")
 region = Rect2(384, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_siilh"]
-atlas = ExtResource("2_6m5ak")
+atlas = ExtResource("5_k6q2w")
 region = Rect2(512, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1hjbd"]
-atlas = ExtResource("2_6m5ak")
+atlas = ExtResource("5_k6q2w")
 region = Rect2(640, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gno3w"]
-atlas = ExtResource("2_6m5ak")
+atlas = ExtResource("5_k6q2w")
 region = Rect2(768, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dvwds"]
-atlas = ExtResource("2_6m5ak")
+atlas = ExtResource("5_k6q2w")
 region = Rect2(896, 0, 128, 128)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_llags"]
@@ -114,17 +115,20 @@ animations = [{
 size = Vector3(0.44873047, 0.8005371, 0.03640747)
 
 [node name="Node3D" type="Node3D" unique_id=1465432829]
-script = ExtResource("1_xl1ln")
+script = ExtResource("1_iiqnd")
+
+[node name="Astar" type="Node3D" parent="." unique_id=1674151250]
+script = ExtResource("2_4y04l")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1557296814]
-transform = Transform3D(-3.7706688e-08, -0.50583804, 0.86262846, -2.2110882e-08, 0.86262846, 0.50583804, -1, 1.7763568e-15, -4.371139e-08, 2.779645, 2.829124, 1.513138)
+transform = Transform3D(-3.7706688e-08, -0.50583804, 0.86262846, -2.2110882e-08, 0.86262846, 0.50583804, -1, 1.7763568e-15, -4.371139e-08, 2.4774687, 2.829124, 1.2511288)
 
 [node name="Units" type="Node" parent="." unique_id=478139512]
-script = ExtResource("1_h2va5")
+script = ExtResource("2_o3pug")
 
 [node name="Knight" type="Node3D" parent="Units" unique_id=239892126]
-transform = Transform3D(-4.371139e-08, 0, 1.0316938, 0, 0.95723146, 0, -1, 0, -4.509677e-08, -0.3144729, 0.8190057, 2.0574822)
-script = ExtResource("2_xl1ln")
+transform = Transform3D(-4.371139e-08, 0, 1.0316938, 0, 0.95723146, 0, -1, 0, -4.509677e-08, -0.3144729, 1.6329381, 2.0574822)
+script = ExtResource("3_4y04l")
 
 [node name="Hero" type="AnimatedSprite3D" parent="Units/Knight" unique_id=1309370450]
 alpha_cut = 2
@@ -141,8 +145,8 @@ transform = Transform3D(0.9998913, 0, -6.4304118e-12, 0, 0.9997767, 0, -4.622080
 shape = SubResource("BoxShape3D_gmuc8")
 
 [node name="Yokai" type="Node3D" parent="Units" unique_id=458766658]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.3144729, 1.709, -0.31974387)
-script = ExtResource("2_xl1ln")
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.3144729, 2.5229325, -0.31974387)
+script = ExtResource("3_4y04l")
 
 [node name="Enemy" type="AnimatedSprite3D" parent="Units/Yokai" unique_id=206605577]
 transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, -0.048999965, -0.8174887, 0.029000014)
@@ -156,14 +160,26 @@ frame_progress = 0.25175032
 [node name="Area3D" type="Area3D" parent="Units/Yokai" unique_id=1691322223]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Units/Yokai/Area3D" unique_id=1264927331]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16577137, -0.24182129, 0.023513973)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16577137, -1.0599556, 0.023514003)
 shape = SubResource("BoxShape3D_6m5ak")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1986628010]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7774461, 0.99185324, 0.97141993)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7774461, 1.7141974, 0.97141993)
 light_energy = 2.053
 shadow_enabled = true
 
-[node name="Terrain_first_draft2" parent="." unique_id=1613608903 instance=ExtResource("7_owwht")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.631, -1.827, 3.252)
+[node name="GridMap" type="GridMap" parent="." unique_id=1443624222]
+mesh_library = ExtResource("7_okw2d")
+cell_size = Vector3(1, 0.1, 1)
+data = {
+"cells": PackedInt32Array(0, 2, 41, 0, 1, 41, 0, 0, 41, 0, 65535, 41, 0, 65534, 41, 1, 65534, 41, 1, 65535, 41, 2, 65535, 41, 1, 0, 41, 1, 1, 41, 1, 2, 41, 1, 3, 41, 1, 4, 41, 2, 4, 41, 2, 3, 41, 3, 3, 41, 3, 2, 41, 2, 1, 41, 2, 0, 41, 2, 65534, 41, 2, 65533, 41, 3, 65534, 41, 3, 65535, 41, 3, 0, 41, 3, 1, 41, 2, 2, 41, 0, 3, 41, 65535, 2, 41, 65535, 3, 41, 65535, 4, 41, 65535, 5, 41, 65535, 6, 41, 0, 6, 41, 0, 5, 41, 0, 4, 41, 0, 65533, 41, 0, 65532, 41, 65535, 65533, 41, 65534, 65534, 41, 65534, 65535, 41, 65534, 0, 41, 65535, 0, 41, 0, 65531, 41, 1, 65531, 41, 1, 65532, 41, 65535, 65534, 41, 65534, 1, 41, 65534, 2, 41, 65534, 3, 41, 65535, 1, 41, 65535, 65535, 41)
+}
+
+[node name="lvl2" type="GridMap" parent="." unique_id=875706491]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0597928, 0)
+visible = false
+mesh_library = ExtResource("7_okw2d")
+cell_size = Vector3(1, 0.1, 1)
+data = {
+"cells": PackedInt32Array(2, 4, 41, 65535, 1, 1441833)
+}
