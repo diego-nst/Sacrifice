@@ -4,7 +4,7 @@ extends Node2D
 var unitName
 var health
 var attack
-var grid_position: Vector2i
+@onready var grid_position: Vector2i = tilemap.map_to_local(position)
 
 func takeDamage(dmg):
 	health -= dmg
@@ -35,6 +35,7 @@ func move(current_path: Array[Vector2i]):
 		var target_position = tilemap.map_to_local(current_path.front())
 		#make this a tween
 		global_position = global_position.move_toward(target_position, 5)
+		
 		if(global_position == target_position):
 			grid_position = current_path.front()
 			current_path.pop_front()
