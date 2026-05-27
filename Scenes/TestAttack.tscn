@@ -166,4 +166,4 @@ light_energy = 2.053
 shadow_enabled = true
 
 [node name="Terrain_first_draft2" parent="." unique_id=1613608903 instance=ExtResource("7_owwht")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.631, -1.827, 3.252)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.685029, -1.9415339, 3.35308)
