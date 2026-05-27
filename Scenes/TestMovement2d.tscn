@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://dy62606tijp2k"]
 
 [ext_resource type="Texture2D" uid="uid://b4gutbx0nat0l" path="res://TestFiles/desert-ruins.png" id="1_q4bnm"]
-[ext_resource type="Script" uid="uid://currtsa74cnpw" path="res://Scenes/TileMap.gd" id="2_cdmia"]
+[ext_resource type="Script" uid="uid://currtsa74cnpw" path="res://Scripts/TileMap.gd" id="2_cdmia"]
 [ext_resource type="Texture2D" uid="uid://bmuae2e8tv8hj" path="res://TestFiles/Idle.png" id="2_h2xbl"]
 [ext_resource type="Script" uid="uid://j1ctivovncob" path="res://Scripts/Playable.gd" id="3_cdmia"]
 

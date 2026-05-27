@@ -1,50 +1,32 @@
-extends Node3D
+extends TileMapLayer
 
-var gridStep := 1.0
-var gridY := 0.5
-var points := {}
-var astar = AStar3D.new()
+var astar = AStarGrid2D.new()
+var map_rect = Rect2i()
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	var pathables = get_tree().get_nodes_in_group("pathable")
-	_addPoints(pathables)
-	_connectPoints()
-
-func _addPoints(pathables: Array):
-	for pathable in pathables:
-		var mesh = pathable.get_node("Plane")
-		var aabb: AABB = mesh.get_aabb()
+func _ready():
+	
+	var tilemap_size = get_used_rect().end - get_used_rect().position
+	map_rect = Rect2i(Vector2i.ZERO, tilemap_size)
+	astar.region = map_rect	
+	
+	astar.cell_size = tile_set.tile_size
+	astar.default_compute_heuristic = AStarGrid2D.HEURISTIC_MANHATTAN
+	astar.default_estimate_heuristic = AStarGrid2D.HEURISTIC_MANHATTAN
+	astar.diagonal_mode = AStarGrid2D.DIAGONAL_MODE_NEVER
+	astar.update()
+	
+	for i in tilemap_size.x:
+		for j in tilemap_size.y:
+			var coords = Vector2i(i,j)
+			var tile_data = get_cell_tile_data(coords)
+			if tile_data and tile_data.get_custom_data('type') == "wall":
+				astar.set_point_solid(coords)
+			if tile_data and tile_data.get_custom_data('type') == "difficult":
+				astar.set_point_weight_scalec(coords,2)
+	
+func is_point_movable(position):
+	var map_position = local_to_map(position)
+	if map_rect.has_point(map_position) and not astar.is_point_solid(map_position):
+		return true
+	return false
 		
-		var firstPoint = aabb.position
-		
-		var xSteps = aabb.size.x/gridStep
-		var zSteps = aabb.size.z/gridStep
-		
-		for x in xSteps:
-			for z in zSteps:
-				var nextPoint = firstPoint + Vector3(x * gridStep, 0, z * gridStep)
-				_addPoint(nextPoint)
-	
-func _addPoint(point: Vector3):
-	point.y = gridY
-	
-	var id = astar.get_available_point_id()
-	
-	astar.add_point(id, point)
-	points[worldToAStar(point)] = id
-	
-func _connectPoints():
-	for point in points:
-		var posStr = point.split(",")
-		var worldPos := Vector3(posStr[0], posStr[1], posStr[2])
-	
-func findPath(from: Vector3, to: Vector3) -> Array:
-	return []
-
-func worldToAStar(worldPoint: Vector3) -> String:
-	var x = snapped(worldPoint.x, gridStep)
-	var y = snapped(worldPoint.y, gridStep)
-	var z = snapped(worldPoint.z, gridStep)
-	
-	return "%d,%d,%d" % [x, y, z]
