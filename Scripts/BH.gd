@@ -1,15 +1,19 @@
-extends Node3D
-var knight
-var yokai
+extends Node2D
+var player_units
+var enemy_units
 
 func _ready() -> void:
-	knight = get_child(0).get_child(0)
-	yokai = get_child(0).get_child(1)
+	player_units = $Units/PlayerUnits
+	enemy_units = $Units/EnemyUnits
+	
+	for child in player_units.get_children():
+		child.setDetails(child.name)
+		child.get_child(1).play("Idle")
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("KnightAttack"):
-		yokai.takeDamage(knight.attack)
+		pass
 	if Input.is_action_just_pressed("YokaiAttack"):
-		knight.takeDamage(yokai.attack)
+		pass
 		

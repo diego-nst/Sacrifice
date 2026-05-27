@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://c4mey0qgd8ch"]
 
-[ext_resource type="Script" uid="uid://bhtf14bhbuy5p" path="res://Scripts/BH&Nav.gd" id="1_iiqnd"]
-[ext_resource type="Script" uid="uid://bdxhquxfdguu5" path="res://Scripts/AStar.gd" id="2_4y04l"]
+[ext_resource type="Script" uid="uid://bhtf14bhbuy5p" path="res://Scripts/BH.gd" id="1_iiqnd"]
+[ext_resource type="Script" uid="uid://dpsd2esbq0cs6" path="res://Scripts/AStar.gd" id="2_4y04l"]
 [ext_resource type="Script" uid="uid://bigydq5x1r422" path="res://Scripts/SetUnitDetails.gd" id="2_o3pug"]
-[ext_resource type="Script" uid="uid://ddh36d2ghkexv" path="res://Scripts/Unit.gd" id="3_4y04l"]
+[ext_resource type="Script" uid="uid://4xfovovnv86l" path="res://Scripts/Unit.gd" id="3_4y04l"]
 [ext_resource type="Texture2D" uid="uid://bu4ek17pux2k8" path="res://TestFiles/KnightIdle.png" id="4_okw2d"]
 [ext_resource type="Texture2D" uid="uid://bmuae2e8tv8hj" path="res://TestFiles/Idle.png" id="5_k6q2w"]
 [ext_resource type="MeshLibrary" uid="uid://bk3p4ngjywbey" path="res://TestFiles/tiles.meshlib" id="7_okw2d"]

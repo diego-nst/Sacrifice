@@ -2,9 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://bu4ek17pux2k8" path="res://TestFiles/KnightIdle.png" id="1_gmuc8"]
 [ext_resource type="Script" uid="uid://bigydq5x1r422" path="res://Scripts/SetUnitDetails.gd" id="1_h2va5"]
-[ext_resource type="Script" uid="uid://bhtf14bhbuy5p" path="res://Scripts/BH&Nav.gd" id="1_xl1ln"]
+[ext_resource type="Script" uid="uid://bhtf14bhbuy5p" path="res://Scripts/BH.gd" id="1_xl1ln"]
 [ext_resource type="Texture2D" uid="uid://bmuae2e8tv8hj" path="res://TestFiles/Idle.png" id="2_6m5ak"]
-[ext_resource type="Script" uid="uid://ddh36d2ghkexv" path="res://Scripts/Unit.gd" id="2_xl1ln"]
+[ext_resource type="Script" uid="uid://4xfovovnv86l" path="res://Scripts/Unit.gd" id="2_xl1ln"]
 [ext_resource type="PackedScene" uid="uid://cp74qbc0ukm72" path="res://Scenes/terrain_first_draft.tscn" id="7_owwht"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h2va5"]

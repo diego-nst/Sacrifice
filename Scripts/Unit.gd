@@ -4,6 +4,7 @@ extends Node2D
 var unitName
 var health
 var attack
+var movement
 @onready var grid_position: Vector2i = tilemap.map_to_local(position)
 var current_path
 var selected = false
@@ -20,6 +21,7 @@ func setDetails(unit):
 	unitName = unit
 	health = db.UNITS[unit][0]
 	attack = db.UNITS[unit][1]
+	movement = db.UNITS[unit][2]
 	print(unitName)
 	print(health)
 	print(attack)
