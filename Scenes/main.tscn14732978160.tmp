@@ -3,6 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://n47j88q10rrh" path="res://TestFiles/Tiles/V0az13m.png" id="1_jjgbg"]
 [ext_resource type="Script" uid="uid://bat4jolslceob" path="res://Scripts/player_units.gd" id="2_8gbba"]
 [ext_resource type="PackedScene" uid="uid://be1a4ar754gar" path="res://Scenes/unit.tscn" id="2_bo1nx"]
+[ext_resource type="Texture2D" uid="uid://bmuae2e8tv8hj" path="res://TestFiles/Idle.png" id="4_jjvhh"]
+[ext_resource type="Script" uid="uid://c51ulbi60458h" path="res://Scripts/unit_area_2d.gd" id="5_21xkr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bo1nx"]
 texture = ExtResource("1_jjgbg")
@@ -1071,6 +1073,73 @@ func is_point_movable(position):
 		
 "
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_kry3j"]
+atlas = ExtResource("4_jjvhh")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_21xkr"]
+atlas = ExtResource("4_jjvhh")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6bp64"]
+atlas = ExtResource("4_jjvhh")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_344ge"]
+atlas = ExtResource("4_jjvhh")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ynf5e"]
+atlas = ExtResource("4_jjvhh")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hptm8"]
+atlas = ExtResource("4_jjvhh")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d1ilt"]
+atlas = ExtResource("4_jjvhh")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6iyac"]
+atlas = ExtResource("4_jjvhh")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fdnlq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kry3j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_21xkr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6bp64")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_344ge")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ynf5e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hptm8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1ilt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6iyac")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jjvhh"]
+size = Vector2(16, 16)
+
 [node name="Main" type="Node2D" unique_id=1180289981]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1540868281]
@@ -1086,8 +1155,17 @@ script = ExtResource("2_8gbba")
 [node name="Yokai" parent="Units/PlayerUnits" unique_id=922115535 instance=ExtResource("2_bo1nx")]
 position = Vector2(72, 56)
 
-[node name="Yokai2" parent="Units/PlayerUnits" unique_id=395737239 instance=ExtResource("2_bo1nx")]
-position = Vector2(72, 104)
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Units/PlayerUnits/Yokai" unique_id=586091173]
+position = Vector2(-4.7683716e-07, 4.7683716e-07)
+scale = Vector2(0.12499999, 0.12499999)
+sprite_frames = SubResource("SpriteFrames_fdnlq")
+animation = &"Idle"
+
+[node name="Area2D2" type="Area2D" parent="Units/PlayerUnits/Yokai" unique_id=1581496839]
+script = ExtResource("5_21xkr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Units/PlayerUnits/Yokai/Area2D2" unique_id=1897578427]
+shape = SubResource("RectangleShape2D_jjvhh")
 
 [node name="EnemyUnits" type="Node2D" parent="Units" unique_id=1684450587]
 

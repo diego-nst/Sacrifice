@@ -6,6 +6,7 @@ var health
 var attack
 @onready var grid_position: Vector2i = tilemap.map_to_local(position)
 var current_path
+var selected = false
 
 func takeDamage(dmg):
 	health -= dmg
@@ -48,6 +49,6 @@ func moveAnim(target):
 func _unhandled_input(event: InputEvent) -> void:
 	var click_position = get_global_mouse_position()
 	if event.is_action_pressed("moveTo"):
-		if tilemap.is_point_movable(click_position) and not current_path:
+		if tilemap.is_point_movable(click_position) and not current_path and selected:
 			current_path = tilemap.astar.get_id_path(tilemap.local_to_map(global_position), tilemap.local_to_map(click_position)).slice(1)
 			move(current_path)
