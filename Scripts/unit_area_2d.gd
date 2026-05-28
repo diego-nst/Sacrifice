@@ -24,7 +24,4 @@ func _on_mouse_exited():
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.is_pressed() and hovering:
 		player_units_handler.select_unit(get_parent())
-	elif event is InputEventMouseButton and event.is_pressed() and not hovering:
-		draw_border = false
-		queue_redraw()
 	queue_redraw()
